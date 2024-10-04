@@ -1011,6 +1011,7 @@ export default class LiquidityModule extends ModuleBase {
           : undefined,
         skipCloseAccount: !inputTokenUseSolBalance,
         notUseTokenAccount: inputTokenUseSolBalance,
+        checkCreateATAOwner: true,
         associatedOnly,
       });
     txBuilder.addInstruction(ownerTokenAccountBaseInstruction || {});
